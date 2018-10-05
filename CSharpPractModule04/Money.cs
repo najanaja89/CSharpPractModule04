@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace CSharpPractModule04
 {
-    public class Money_
+    public class Money
     {
         private double valueMoney;
         private double countOfMoney;
 
-        public Money_()
+        public Money()
         {
             valueMoney = 1.0;
             countOfMoney = 1.0;
         }
 
-        public Money_(double valueMoney, double countOfMoney)
+        public Money(double valueMoney, double countOfMoney)
         {
             this.countOfMoney = countOfMoney;
             this.valueMoney = valueMoney;
@@ -48,13 +48,13 @@ namespace CSharpPractModule04
 
 
 
-        bool IsEnoughtMoney(double sumOfMoney)
+        public bool IsEnoughtMoney(double sumOfMoney)
         {
             if ((valueMoney * countOfMoney) <= sumOfMoney) return true;
             else return false;
         }
 
-        double CountOfItem(double costOfItem)
+        public double CountOfItem(double costOfItem)
         {
             return (valueMoney * countOfMoney) / costOfItem;
         }
